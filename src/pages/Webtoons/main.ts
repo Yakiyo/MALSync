@@ -27,10 +27,20 @@ export const Webtoons: pageInterface = {
     getEpisode(url: string): number {
       return Number(new URL(url).searchParams.get('episode_no'));
     },
-    nextEpUrl: undefined,
-    uiSelector: undefined,
-    getMalUrl: undefined,
-    readerConfig: undefined,
+    nextEpUrl(url): string {
+      return j.$('a.pg_next._nextEpisode').attr('href') as string;
+    },
+  },
+  overview: {
+    getTitle(url) {
+      return j.$('div.info > h1.subj').first().text();
+    },
+    getIdentifier(url) {
+      return utils.urlPart(url, 5);
+    },
+    uiSelector(selector) {
+      j.$('div.detail_list > ul#_listUl').first().prepend(j.html(selector));
+    },
   },
   init: (page: SyncPage) => {
     page.handlePage();
