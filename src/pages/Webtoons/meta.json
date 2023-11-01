@@ -1,0 +1,6 @@
+{
+  "search": "https://www.webtoons.com/en/search?keyword={searchterm}",
+  "urls": {
+    "match": ["*:///www.webtoons.com/*"]
+  }
+}
