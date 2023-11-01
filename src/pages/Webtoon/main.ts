@@ -1,7 +1,7 @@
 import { pageInterface } from '../pageInterface';
 import { SyncPage } from '../syncPage';
 
-export const Webtoons: pageInterface = {
+export const Webtoon: pageInterface = {
   name: 'Webtoon',
   domain: ['webtoons.com'],
   languages: ['English'],
