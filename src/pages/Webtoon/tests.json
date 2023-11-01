@@ -1,0 +1,37 @@
+{
+  "title": "Webtoon",
+  "url": "https://www.webtoons.com/",
+  "testCases": [
+    {
+      "url": "https://www.webtoons.com/en/fantasy/a-not-so-fairy-tale/list?title_no=5637",
+      "expected": {
+        "sync": false,
+        "title": "A Not So Fairy Tale",
+        "identifier": "a-not-so-fairy-tale",
+        "uiSelector": true
+      }
+    },
+    {
+      "url": "https://www.webtoons.com/en/fantasy/a-not-so-fairy-tale/episode-8/viewer?title_no=5637&episode_no=8",
+      "expected": {
+        "sync": true,
+        "title": "A Not So Fairy Tale",
+        "identifier": "a-not-so-fairy-tale",
+        "episode": 8,
+        "nextEpUrl": "https://www.webtoons.com/en/fantasy/a-not-so-fairy-tale/episode-9/viewer?title_no=5637&episode_no=9",
+        "uiSelector": false
+      }
+    },
+    {
+      "url": "https://www.webtoons.com/en/fantasy/the-remarried-empress/s3-episode-141/viewer?title_no=2135&episode_no=145",
+      "expected": {
+        "sync": true,
+        "title": "The Remarried Empress",
+        "identifier": "the-remarried-empress",
+        "episode": 145,
+        "nextEpUrl": "https://www.webtoons.com/en/fantasy/the-remarried-empress/s3-episode-142/viewer?title_no=2135&episode_no=146",
+        "uiSelector": false
+      }
+    }
+  ]
+}
